@@ -1,0 +1,22 @@
+{
+  "name": "preview-card-component-",
+  "version": "1.0.0",
+  "description": "A project from front mentor",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w src/main.scss:style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linusmanuel/preview-card-component-.git"
+  },
+  "author": "Joao Lino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linusmanuel/preview-card-component-/issues"
+  },
+  "homepage": "https://github.com/linusmanuel/preview-card-component-#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
