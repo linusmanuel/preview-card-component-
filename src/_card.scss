@@ -1,0 +1,171 @@
+body {
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.c-title-2,
+.c-title-3 {
+  color: #fff;
+}
+
+.c-card {
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover &__cover::before {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover &__cover::after {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &--preview {
+    background-color: #14253d;
+    max-height: 809px;
+    margin-inline: auto;
+    margin-block: 100px;
+    padding: 25px;
+    width: 350px;
+  }
+
+  &__head {
+  }
+
+  &__cover {
+    background-image: #fff url("");
+    height: 302px;
+    max-width: 100%;
+    margin-bottom: 24px;
+    position: relactive;
+
+    &::before {
+      display: bolck;
+      position: absolute;
+      content: url("/images/icon-view.svg");
+      left: 50%;
+      top: 50%;
+      width: 45px;
+      height: 45px;
+      transform: translate(-50%);
+      z-index: 2;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 302px;
+      width: 302px;
+      left: 50%;
+      background: #0198a9c9;
+      border-radius: 10px;
+      transform: translate(-50%);
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+
+      // &:nth-of-type(2) {
+      //   position: absolute;
+      //   transform: translate(-50%, -50%);
+      //   left: 50%;
+      //   display: block;
+      // }
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__inner {
+    color: #8bacda;
+    margin: 0 0 6px 0;
+  }
+
+  &__text {
+    color: currentColor;
+    line-height: 25px;
+    margin-bottom: 22px;
+  }
+
+  &__detail {
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+    span:nth-of-type(1) {
+      color: #00fff7;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  &__duraction {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  &__footer {
+    &-copyright {
+      display: flex;
+      align-items: center;
+    }
+
+    &-picture {
+      background-color: red;
+      border-radius: 50%;
+      border: solid 1px #fff;
+      display: block;
+      height: 30px;
+      margin-right: 16px;
+      width: 30px;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-title {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+
+      span {
+        color: #8bacda;
+      }
+    }
+  }
+}
+
+//Ideal trocar px por rem;
+// Usar svg ao invéis de img no icones do card.
